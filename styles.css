@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Baseline styles */
+
+body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: auto;
+}
+
+header,
+main,
+footer {
+    padding: 10px;
+}
+
+.container {
+    max-width: 100px;
+    margin: 0 auto;
+    /* Centers the content horizontally */
+}
+
+
+/* Navigation Menu */
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.search {
+    display: flex;
+    align-items: right;
+}
+
+.srch {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Responsive Design using Media Queries */
+
+
+/* For screens smaller than 768px (tablets and phones) */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        text-align: center;
+    }
+    .menu li {
+        margin: 20px 0;
+    }
+    .search {
+        display: none;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .course-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .course {
+        width: 48%;
+        /* Adjust width for desired layout on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+
+/* For screens smaller than 480px (small phones) */
+
+@media only screen and (max-width: 480px) {
+    .course {
+        width: 100%;
+    }
+}
+
+body {
+    background-image: url('myriam-jessier-VHXiGXxwOQ4-unsplash.jpg');
+    background-size: 1500px 1200px;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    background-attachment: absolute;
+    background-position: 5px 5px;
+    align-items: right;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-position: center;
+    background-size: cover;
+    background-color: gold;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.055)50%, rgba(0, 0, 0, 0.055)50%), url(1.jpg);
+}
+
+.navbar {
+    width: 1200px;
+    margin: auto;
+    height: 75px;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+    margin-top: 0px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.menu {
+    width: 600px;
+    float: right;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #742424;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+.search {
+    width: 330px;
+    float: center;
+    margin-left: 300px;
+    margin-top: 0px;
+}
+
+.srch {
+    font-family: 'Arial';
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 5px;
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 16px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    padding-left: 10px;
+    background-color: antiquewhite;
+}
+
+.home-description,
+h2 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.home-description,
+p {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify, right;
+    background-color: none;
+}
+
+.home-banner,
+img {
+    width: 50% relative, right;
+    height: 500px;
+    align-items: right;
+    position: relative;
+    image-resolution: from-image;
+    padding-right: 0px;
+    padding-left: 0%;
+    float: right;
+}
+
+.home-highlights {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-family: Arial;
+    background-color: wheat;
+}
+
+.home-highlights,
+h3 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-family: Arial;
+    float: inline-start;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: wheat;
+    color: black;
+    float: inline-start;
+    position: relative;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+    font-size: 10px;
+}
+
+footer p {
+    text-align: right;
+    font-size: 10px;
+}
+
+.social-media {
+    width: 100%;
+    height: 10vh;
+    background-color: wheat;
+    color: black;
+    float: inline-end;
+    position: relative;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+    font-size: 20px;
+}
+
+.g-signin2 {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -50px;
+}
+
+#courses {
+    width: 100%;
+    text-align: center;
+    float: inline-start;
+    position: relative;
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: black;
+    background-color: wheat;
+}
+
+#courses h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: black;
+}
+
+#courses p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: black;
+    background-color: none;
+}
+
+#courses a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
